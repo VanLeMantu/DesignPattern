@@ -1,6 +1,6 @@
-﻿using BuilderPatternForPizzaExample;
-using NonBuilderPatternForPizzaExample;
-using BuilderDesignPatternForHouseExample;
+﻿//using BuilderPatternForPizzaExample;
+//using NonBuilderPatternForPizzaExample;
+//using BuilderDesignPatternForHouseExample;
 
 //// builder pattern
 //var director = new Director();
@@ -12,10 +12,23 @@ using BuilderDesignPatternForHouseExample;
 //Console.WriteLine($"Size: {pizzaNonbuilder.Size}, Pepperoni: {pizzaNonbuilder.Pepperoni}");
 
 // builder pattern with house example
-IHouseBuilder stoneHouseBuilder = new StoneHouseBuilder();
-House stoneHouse = HouseDirector.Construct(stoneHouseBuilder);
-Console.WriteLine($"Constructed House: {stoneHouse.Walls}, {stoneHouse.Doors}, {stoneHouse.Windows}");
+//IHouseBuilder stoneHouseBuilder = new StoneHouseBuilder();
+//House stoneHouse = HouseDirector.Construct(stoneHouseBuilder);
+//Console.WriteLine($"Constructed House: {stoneHouse.Walls}, {stoneHouse.Doors}, {stoneHouse.Windows}");
 
-IHouseBuilder woodenHouseBuilder = new WoodenHouseBuilder();
-House woodenHouse = HouseDirector.Construct(woodenHouseBuilder);
-Console.WriteLine($"Constructed House: {woodenHouse.Walls}, {woodenHouse.Doors}, {woodenHouse.Windows}");
+//IHouseBuilder woodenHouseBuilder = new WoodenHouseBuilder();
+//House woodenHouse = HouseDirector.Construct(woodenHouseBuilder);
+//Console.WriteLine($"Constructed House: {woodenHouse.Walls}, {woodenHouse.Doors}, {woodenHouse.Windows}");
+
+// factory method pattern
+using FactoryMethodDesignPattern;
+
+IDocumentCreator pdfCreator = new PDFDocumentCreator();
+IDocument pdfDocument = pdfCreator.CreateDocument();
+pdfDocument.Open();
+pdfDocument.Save();
+
+IDocumentCreator wordCreator = new WordDocumentCreator();
+IDocument wordDocument = wordCreator.CreateDocument();
+wordDocument.Open();
+wordDocument.Save();
