@@ -9,6 +9,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\BuilderDesignPatternForHouseExample\BuilderDesignPatternForHouseExample.csproj" />
+    <ProjectReference Include="..\BuilderFactoryDesignPattern\AbstractFactoryDesignPattern.csproj" />
     <ProjectReference Include="..\BuilderPatternForPizzaExample\BuilderPatternForPizzaExample.csproj" />
     <ProjectReference Include="..\FactoryMethodDesignPattern\FactoryMethodDesignPattern.csproj" />
     <ProjectReference Include="..\NonBuilderPatternForPizzaExample\NonBuilderPatternForPizzaExample.csproj" />

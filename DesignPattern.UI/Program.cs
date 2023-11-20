@@ -21,14 +21,22 @@
 //Console.WriteLine($"Constructed House: {woodenHouse.Walls}, {woodenHouse.Doors}, {woodenHouse.Windows}");
 
 // factory method pattern
-using FactoryMethodDesignPattern;
+//using FactoryMethodDesignPattern;
 
-IDocumentCreator pdfCreator = new PDFDocumentCreator();
-IDocument pdfDocument = pdfCreator.CreateDocument();
-pdfDocument.Open();
-pdfDocument.Save();
+//IDocumentCreator pdfCreator = new PDFDocumentCreator();
+//IDocument pdfDocument = pdfCreator.CreateDocument();
+//pdfDocument.Open();
+//pdfDocument.Save();
 
-IDocumentCreator wordCreator = new WordDocumentCreator();
-IDocument wordDocument = wordCreator.CreateDocument();
-wordDocument.Open();
-wordDocument.Save();
+//IDocumentCreator wordCreator = new WordDocumentCreator();
+//IDocument wordDocument = wordCreator.CreateDocument();
+//wordDocument.Open();
+//wordDocument.Save();
+
+using BuilderFactoryDesignPattern;
+
+var catShop = new PetShop(new CatFactory());
+catShop.DescribeProducts();
+
+var dogShop = new PetShop(new DogFactory());
+dogShop.DescribeProducts();
