@@ -44,17 +44,27 @@
 using PrototypeDesignPattern;
 
 Document doc = new();
-doc.Title = "Document Prototype";
+doc.Title = "Document ABC";
 Document docCopy = (Document)doc.Clone(doc);
 Console.WriteLine($"docCopy's title = {docCopy.Title}");
 
-Image img = new();
-img.FileName = "image.png";
+Image img = new()
+{
+    FileName = "image.png"
+};
 Image imgCopy = (Image)img.Clone(img);
 Console.WriteLine($"imgCopy's file name = {imgCopy.FileName}");
 
-Car car = new Car();
-Car prototypeRedTesla = (Car)car.Clone(new Car { Color = "Red", Model = "Tesla"});
+Car car = new();
+//Car clone = new Car();
+//clone.Color = "Red";
+//clone.Model = "Tesla";
+
+// Car clone = new Car() { Color = "Red", Model = "Tesla" };
+
+// Car clone = new Car { Color = "Red", Model = "Tesla" };
+
+Car prototypeRedTesla = (Car)car.Clone(new Car() { Color = "Red", Model = "Tesla"});
 Console.WriteLine($"prototypeRedTesla's color = {prototypeRedTesla.Color}, model = {prototypeRedTesla.Model}");
 Car prototypeBlueFord = (Car)car.Clone(new Car { Color = "Blue", Model = "Ford" });
 Console.WriteLine($"prototypeRedTesla's color = {prototypeBlueFord.Color}, model = {prototypeBlueFord.Model}");

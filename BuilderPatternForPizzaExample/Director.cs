@@ -1,8 +1,8 @@
 ﻿namespace BuilderPatternForPizzaExample
 {
-    public class Director
+    public static class Director
     {
-        public Pizza CreatePizzaWithChilly()
+        public static Pizza CreatePizzaWithChilly()
         {
             return new PizzaBuilder()
                 .SetSize(12)

@@ -12,5 +12,10 @@
             cloned.Color = ((Car)car).Color;
             return cloned;
         }
+
+        public IPrototype CloneSelf()
+        {
+            return (Car)MemberwiseClone();
+        }
     }
 }

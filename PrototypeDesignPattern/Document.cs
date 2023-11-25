@@ -7,8 +7,20 @@
 
         public IPrototype Clone(IPrototype documents)
         {
-            Document cloned = (Document)MemberwiseClone();
+            Document cloned = new()
+            {
+                Title = this.Title,
+                Text = this.Text
+            };
+
+            //Document cloned = (Document)MemberwiseClone();
+
             return cloned;
+        }
+
+        public IPrototype CloneSelf()
+        {
+            return (Document)MemberwiseClone();
         }
     }
 }

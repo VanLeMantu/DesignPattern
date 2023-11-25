@@ -6,8 +6,16 @@
 
         public IPrototype Clone(IPrototype image)
         {
-            Image cloned = (Image)MemberwiseClone();
+            Image cloned = new();
+            //image = (Image)image;
+
+            //cloned.FileName = image.
             return cloned;
+        }
+
+        public IPrototype CloneSelf()
+        {
+            return (Image)MemberwiseClone();
         }
     }
 }

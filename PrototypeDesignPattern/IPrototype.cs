@@ -2,6 +2,7 @@
 {
     public interface IPrototype
     {
-        IPrototype Clone(IPrototype car);
+        IPrototype Clone(IPrototype prototype);
+        IPrototype CloneSelf();
     }
 }
