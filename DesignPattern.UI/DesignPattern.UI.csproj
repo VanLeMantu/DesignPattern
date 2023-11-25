@@ -13,6 +13,7 @@
     <ProjectReference Include="..\BuilderPatternForPizzaExample\BuilderPatternForPizzaExample.csproj" />
     <ProjectReference Include="..\FactoryMethodDesignPattern\FactoryMethodDesignPattern.csproj" />
     <ProjectReference Include="..\NonBuilderPatternForPizzaExample\NonBuilderPatternForPizzaExample.csproj" />
+    <ProjectReference Include="..\PrototypeDesignPattern\PrototypeDesignPattern.csproj" />
   </ItemGroup>
 
 </Project>

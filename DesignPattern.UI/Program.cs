@@ -33,10 +33,28 @@
 //wordDocument.Open();
 //wordDocument.Save();
 
-using BuilderFactoryDesignPattern;
+//using BuilderFactoryDesignPattern;
 
-var catShop = new PetShop(new CatFactory());
-catShop.DescribeProducts();
+//var catShop = new PetShop(new CatFactory());
+//catShop.DescribeProducts();
 
-var dogShop = new PetShop(new DogFactory());
-dogShop.DescribeProducts();
+//var dogShop = new PetShop(new DogFactory());
+//dogShop.DescribeProducts();
+
+using PrototypeDesignPattern;
+
+Document doc = new();
+doc.Title = "Document Prototype";
+Document docCopy = (Document)doc.Clone(doc);
+Console.WriteLine($"docCopy's title = {docCopy.Title}");
+
+Image img = new();
+img.FileName = "image.png";
+Image imgCopy = (Image)img.Clone(img);
+Console.WriteLine($"imgCopy's file name = {imgCopy.FileName}");
+
+Car car = new Car();
+Car prototypeRedTesla = (Car)car.Clone(new Car { Color = "Red", Model = "Tesla"});
+Console.WriteLine($"prototypeRedTesla's color = {prototypeRedTesla.Color}, model = {prototypeRedTesla.Model}");
+Car prototypeBlueFord = (Car)car.Clone(new Car { Color = "Blue", Model = "Ford" });
+Console.WriteLine($"prototypeRedTesla's color = {prototypeBlueFord.Color}, model = {prototypeBlueFord.Model}");
