@@ -8,6 +8,9 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\AdapterDesignPattern\AdapterDesignPattern.csproj" />
+    <ProjectReference Include="..\BridgeDesignPattern2\BridgeDesignPattern2.csproj" />
+    <ProjectReference Include="..\BridgeDesignPattern\BridgeDesignPattern.csproj" />
     <ProjectReference Include="..\BuilderDesignPatternForHouseExample\BuilderDesignPatternForHouseExample.csproj" />
     <ProjectReference Include="..\BuilderFactoryDesignPattern\AbstractFactoryDesignPattern.csproj" />
     <ProjectReference Include="..\BuilderPatternForPizzaExample\BuilderPatternForPizzaExample.csproj" />
