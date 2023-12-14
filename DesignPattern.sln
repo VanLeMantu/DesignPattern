@@ -19,9 +19,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PrototypeDesignPattern", "P
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AdapterDesignPattern", "AdapterDesignPattern\AdapterDesignPattern.csproj", "{D4B8CFC7-A5CD-49C6-A508-31FE1D59A0F7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BridgeDesignPattern", "BridgeDesignPattern\BridgeDesignPattern.csproj", "{3FF5F71C-2C2D-4E46-A868-957D44D33BA9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BridgeDesignPattern", "BridgeDesignPattern\BridgeDesignPattern.csproj", "{3FF5F71C-2C2D-4E46-A868-957D44D33BA9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BridgeDesignPattern2", "BridgeDesignPattern2\BridgeDesignPattern2.csproj", "{9BCD69FB-E905-4675-956D-6E784D8B96AB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BridgeDesignPattern2", "BridgeDesignPattern2\BridgeDesignPattern2.csproj", "{9BCD69FB-E905-4675-956D-6E784D8B96AB}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CompositeDesignPattern", "CompositeDesignPattern\CompositeDesignPattern.csproj", "{C68CECA4-7E72-457A-A7D4-FAB11883FB7D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CompositeDesignPattern2", "CompositeDesignPattern2\CompositeDesignPattern2.csproj", "{FBC704F9-047E-4090-BF4C-13954B78B99E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -69,6 +73,14 @@ Global
 		{9BCD69FB-E905-4675-956D-6E784D8B96AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9BCD69FB-E905-4675-956D-6E784D8B96AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9BCD69FB-E905-4675-956D-6E784D8B96AB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C68CECA4-7E72-457A-A7D4-FAB11883FB7D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C68CECA4-7E72-457A-A7D4-FAB11883FB7D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C68CECA4-7E72-457A-A7D4-FAB11883FB7D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C68CECA4-7E72-457A-A7D4-FAB11883FB7D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FBC704F9-047E-4090-BF4C-13954B78B99E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FBC704F9-047E-4090-BF4C-13954B78B99E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FBC704F9-047E-4090-BF4C-13954B78B99E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FBC704F9-047E-4090-BF4C-13954B78B99E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
